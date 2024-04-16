@@ -1,0 +1,96 @@
+package Test;
+import java.util.Scanner;
+
+
+public class Main {
+
+    /*1.7
+    public static int factorial(int f) {
+        int result = 1;
+        for (int i = 1; i <= f; i++) {
+            result = result * i;
+        }
+        return result;
+    }
+*/
+
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+/*1.3
+        int[] numbers = new int[] {1, 2, 3, 4, 5};
+        int sum = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+
+        double ave = (double) sum / numbers.length;
+
+        System.out.println("Сумма элементов массива: " + sum);
+        System.out.println("Среднее арифметическое: " + ave);
+    }
+ */
+
+/* 1.4
+        int[] numbers = new int[5];
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = scan.nextInt();
+        }
+
+        int sum = 0;
+        int max = numbers[0];
+        int min = numbers[0];
+        int i = 0;
+
+
+        do {
+            sum += numbers[i];
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+            if (numbers[i] < min) {
+                min = numbers[i];
+            }
+            i++;
+        } while (i < numbers.length);
+
+        while (i < numbers.length) {
+            sum += numbers[i];
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+            if (numbers[i] < min) {
+                min = numbers[i];
+            }
+            i++;
+        }
+
+        System.out.println("Сумма элементов массива: " + sum);
+        System.out.println("Максимальный элемент массива: " + max);
+        System.out.println("Минимальный элемент массива: " + min);
+*/
+
+        /*
+        System.out.println("Aргументы командной строки: " + args.length);
+        for (int i = 0; i < args.length; i++) {
+            System.out.println(args[i]);
+        }
+        */
+
+        /* 1.6
+        double sum = 0;
+        for (int i = 1; i <= 10; i++) {
+            sum += 1.0 / i;
+            System.out.printf("Номер %d = %.3f\n", i, sum); //вместо %d будет целое i, вместо %3.f число с плав точкой до трех знаков sum
+        }
+         */
+
+        // 1.7 System.out.println(factorial(5));
+
+    }
+}
+
+
