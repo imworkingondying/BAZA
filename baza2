@@ -1,0 +1,83 @@
+#1
+package Test;
+
+class Test {
+    public class Author {
+        private String name;
+        private String email;
+        private char gender;
+
+        public Author(String name, String email, char gender) {
+            this.name = name;
+            this.email = email;
+            this.gender = gender;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public char getGender() {
+            return gender;
+        }
+    }
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Author TestAuthor = new Author(Say Gex, saygex@gamil.com, 'M');
+        System.out.println(Author name  + TestAuthor.getName());
+        System.out.println(Author email  + TestAuthor.getEmail());
+        System.out.println(Author gender  + TestAuthor.getGender());
+    }
+}
+
+#2
+package Test;
+class Ball {
+    private double x = 0.0;
+    private double y = 0.0;
+    public Ball(){}
+    public Ball(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+    public double getX() {
+        return x;
+    }
+    public double getY() {
+        return y;
+    }
+    public void setX(double x) {
+        this.x = x;
+    }
+    public void setY(double y) {
+        this.y = y;
+    }
+    public void setXY(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+    public void move( double xDisp, double yDisp){
+        x+=xDisp;
+        y+=yDisp;
+    }
+    @Override
+    public String toString() {
+        return "Ball @ ("+this.x+", "+this.y+").";
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Ball ball = new Ball(100, 100);
+        System.out.println(ball);
+        ball.move(30, 15);
+        System.out.println(ball);
+    }
+}
